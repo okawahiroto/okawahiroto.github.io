@@ -2,19 +2,171 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hiroto Okawa | 営業と開発をつなぎ、生成AIで成果をつくる</title>
+  <meta name="description" content="セールス・システムエンジニア両部門のマネージャー。営業組織のマネジメントと生成AIの業務活用、個人でのアプリ開発について発信しています。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hiroto Okawa">
+  <meta property="og:description" content="営業と開発をつなぎ、生成AIで成果をつくる。">
+  <meta property="og:url" content="https://okawahiroto.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello World!!</h1>
-  <div class="pushnate-register-button" data-site-id="cc85aef133b0e2f1ce9bdb9073cf323c"></div>
-  <script>
-    (function(w, d, s, path) {
-      tag = d.createElement(s);
-      firstTag = d.getElementsByTagName(s)[0];
-      tag.async = 1;
-      tag.src = path;
-      firstTag.parentNode.insertBefore(tag, firstTag);
-    })(window, document, 'script', 'https://s.pushnate.com/pushnateButton.js');
-  </script>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Hiroto Okawa</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Sales × Engineering × Generative AI</p>
+        <h1>営業と開発をつなぎ、<br>生成AIで成果をつくる。</h1>
+        <p class="lead">
+          セールスとシステムエンジニア、両部門のマネージャーをしています。
+          現場の数字に責任を持つ立場から、生成AIを使って組織の成果を上げる方法を考え、試し、発信しています。
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              セールスマネージャーとして5年。現在はセールス部門とシステムエンジニア部門の両方を率い、メンバーマネジメントと受注・売上・粗利に責任を持っています。
+            </p>
+            <p>
+              エンジニアリングは独学です。だからこそ「非エンジニアでも生成AIがあればここまで作れる」を自分の手で確かめてきました。
+              営業の現場感覚と、手を動かして作る経験の両方を持っていることが強みです。
+            </p>
+          </div>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>Sales / SE 部門マネージャー</dd></div>
+            <div><dt>Experience</dt><dd>セールスマネージャー歴 5年</dd></div>
+            <div><dt>Responsibility</dt><dd>受注・売上・粗利、メンバーマネジメント</dd></div>
+            <div><dt>Tools</dt><dd>生成AI / Office / フロントエンド技術</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Focus</h2>
+        <p class="section-lead">主に3つのテーマで発信しています。</p>
+        <div class="focus-grid">
+          <article class="focus-item">
+            <span class="focus-num">01</span>
+            <h3>営業組織のマネジメント</h3>
+            <p>受注・売上・粗利をどう積み上げるか。戦略策定から提案のブラッシュアップ、メンバー育成まで、現場の実践知を言語化します。</p>
+          </article>
+          <article class="focus-item">
+            <span class="focus-num">02</span>
+            <h3>生成AIの業務活用</h3>
+            <p>資料作成、提案、調査、開発支援。複数のAIモデルを使い分け、コストと品質のバランスを取りながら業務に組み込む方法を探っています。</p>
+          </article>
+          <article class="focus-item">
+            <span class="focus-num">03</span>
+            <h3>非エンジニアの個人開発</h3>
+            <p>独学の非エンジニアが、生成AIと一緒にアプリを企画し、ストア公開まで進めた過程と学びを共有します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2 class="section-title">Works</h2>
+        <p class="section-lead">生成AIと一緒に作ってきたアプリやツールです。</p>
+
+        <article class="work-featured">
+          <img src="images/ripeto.png" alt="Ripeto のアプリアイコン" width="96" height="96">
+          <div>
+            <p class="work-meta">iOS / Android アプリ ・ 公開中</p>
+            <h3>Ripeto（リペト）</h3>
+            <p>演奏会や発表会など「本番」から逆算して練習を記録するアプリ。練習するたびに星が増え、達成感を感じながら繰り返し練習できます。企画からデザイン、実装、App Store・Google Play での公開まで個人で行いました。</p>
+            <p class="work-tags">Expo / React Native / TypeScript / Firebase</p>
+            <div class="work-links">
+              <a href="https://apps.apple.com/jp/app/id6763823548" target="_blank" rel="noopener">App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.okawahiroto.ripeto" target="_blank" rel="noopener">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="works-grid">
+          <article class="work-card">
+            <p class="work-meta">Web / iOS / Android</p>
+            <h3>Step Metronome</h3>
+            <p>スマートフォン向けのシンプルなメトロノーム。1つのWebソースから、Web版とiOS・Androidアプリを提供しています。</p>
+            <p class="work-tags">Capacitor / Vercel</p>
+            <div class="work-links"><a href="https://step-metronome.vercel.app" target="_blank" rel="noopener">Webで開く</a></div>
+          </article>
+          <article class="work-card">
+            <p class="work-meta">Web アプリ</p>
+            <h3>Bassoon Fingering</h3>
+            <p>ファゴットの運指図をタップで記録し、画像として保存・共有できるツール。ビルド不要の静的Webアプリです。</p>
+            <p class="work-tags">HTML / JavaScript / SVG</p>
+            <div class="work-links">
+              <a href="https://okawahiroto.github.io/bassoon-fingering-app/" target="_blank" rel="noopener">Webで開く</a>
+              <a href="https://github.com/okawahiroto/bassoon-fingering-app" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="work-card">
+            <p class="work-meta">ローカル Web アプリ</p>
+            <h3>AI Multi Chat</h3>
+            <p>1つの質問を ChatGPT・Claude・Gemini・Grok に同時に送り、回答とコストを並べて比較。AIの使い分けを判断するための道具です。</p>
+            <p class="work-tags">OpenAI / Anthropic / Google / xAI API</p>
+          </article>
+          <article class="work-card">
+            <p class="work-meta">開発支援ツール</p>
+            <h3>Cross-model Code Review</h3>
+            <p>自分が書いたコードを、会話履歴を持たない別のAIにレビューさせ、別のAIが修正する仕組み。AIに自分の答案を採点させない工夫です。</p>
+            <p class="work-tags">Claude Code / Codex</p>
+          </article>
+          <article class="work-card">
+            <p class="work-meta">ローカル Web アプリ</p>
+            <h3>楽譜 → MusicXML</h3>
+            <p>紙の楽譜のPDFや写真を MusicXML に変換。処理はすべて手元のMacで完結し、外部にファイルを送りません。</p>
+            <p class="work-tags">Python / OMR</p>
+            <div class="work-links"><a href="https://github.com/okawahiroto/score-to-musicxml-Audiveris" target="_blank" rel="noopener">GitHub</a></div>
+          </article>
+          <article class="work-card">
+            <p class="work-meta">Web アプリ</p>
+            <h3>ポモドーロタスク</h3>
+            <p>今日のタスクを棚卸しし、1つずつポモドーロで片付ける個人用アプリ。継続をヒートマップで可視化します。</p>
+            <p class="work-tags">Vite / TypeScript</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">発信へのご感想や、お仕事のご相談は以下からどうぞ。</p>
+        <div class="contact-links">
+          <a href="https://github.com/okawahiroto" target="_blank" rel="noopener">GitHub</a>
+          <!-- TODO: X / note / LinkedIn のURLが決まったら追加 -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 Hiroto Okawa</small>
+    </div>
+  </footer>
 </body>
 </html>
