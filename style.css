@@ -55,7 +55,7 @@ a:hover { text-decoration: underline; }
 .site-header nav a:hover { color: var(--text); text-decoration: none; }
 
 /* Hero */
-.hero { padding: 120px 0 104px; }
+.hero { padding: 120px 0 24px; }
 .eyebrow {
   margin: 0 0 20px;
   color: var(--accent);
@@ -159,7 +159,7 @@ a:hover { text-decoration: underline; }
   .container { padding: 0 16px; }
   .site-header nav { gap: 14px; }
   .site-header nav a { font-size: 13px; }
-  .hero { padding: 72px 0 64px; }
+  .hero { padding: 72px 0 16px; }
   .section { padding: 64px 0; }
   .section-lead { font-size: 19px; margin-bottom: 28px; }
   .about-grid, .works-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -174,4 +174,19 @@ a:hover { text-decoration: underline; }
   .logo { font-size: 14px; }
   .site-header nav { gap: 10px; }
   .site-header nav a { font-size: 12px; }
+}
+
+/* Works as page top */
+.works-top { padding-top: 72px; }
+.page-title {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4.5vw, 40px);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+.works-top .lead { margin-bottom: 48px; }
+
+@media (max-width: 768px) {
+  .works-top { padding-top: 48px; }
+  .works-top .lead { margin-bottom: 32px; }
 }

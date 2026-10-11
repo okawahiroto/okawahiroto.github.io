@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hiroto Okawa | 非エンジニアのマネージャーが、生成AIでつくる</title>
-  <meta name="description" content="セールス・SE両部門のマネージャー。独学の非エンジニアが生成AIと一緒にアプリを企画・開発・公開した実例と、その作り方を発信しています。">
+  <title>Hiroto Okawa | Works</title>
+  <meta name="description" content="Hiroto Okawa Works">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hiroto Okawa">
-  <meta property="og:description" content="非エンジニアのマネージャーが、生成AIでつくる。">
+  <meta property="og:description" content="Hiroto Okawa Works">
   <meta property="og:url" content="https://okawahiroto.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -19,30 +19,21 @@
       <a href="#" class="logo">Hiroto Okawa</a>
       <nav aria-label="メインナビゲーション">
         <a href="#works">Works</a>
-        <a href="#how">How I build</a>
-        <a href="#about">About</a>
+        <!-- <a href="#how">How I build</a>
+        <a href="#about">About</a> -->
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section id="works" class="section works-top">
       <div class="container">
-        <p class="eyebrow">Generative AI × App Development</p>
-        <h1>非エンジニアのマネージャーが、<br>生成AIでつくる。</h1>
+        <h1 class="page-title">Hiroto Okawa's Works</h1>
         <p class="lead">
-          本業はセールスとシステムエンジニア、両部門のマネージャーです。
-          プログラミングは独学。生成AIと一緒にアプリを企画し、作り、ストアに公開するまでの実例と、その作り方を発信しています。
+          生成AIのおかげで、アプリを作れるようになりました。<br>
+          企画から設計・開発・公開まで、一人で行っています。
         </p>
-      </div>
-    </section>
-
-    <section id="works" class="section">
-      <div class="container">
-        <h2 class="section-title">Works</h2>
-        <p class="section-lead">生成AIと一緒に作ってきたアプリやツールです。</p>
-
         <article class="work-featured">
           <img src="images/ripeto.png" alt="Ripeto のアプリアイコン" width="96" height="96">
           <div>
@@ -59,16 +50,9 @@
 
         <div class="works-grid">
           <article class="work-card">
-            <p class="work-meta">Web / iOS / Android</p>
-            <h3>Step Metronome</h3>
-            <p>スマートフォン向けのシンプルなメトロノーム。1つのWebソースから、Web版とiOS・Androidアプリを提供しています。</p>
-            <p class="work-tags">Capacitor / Vercel</p>
-            <div class="work-links"><a href="https://step-metronome.vercel.app" target="_blank" rel="noopener">Webで開く</a></div>
-          </article>
-          <article class="work-card">
             <p class="work-meta">Web アプリ</p>
             <h3>Bassoon Fingering</h3>
-            <p>ファゴットの運指図をタップで記録し、画像として保存・共有できるツール。ビルド不要の静的Webアプリです。</p>
+            <p>ファゴットの運指図をタップで記録し、画像として保存・共有できるツール。ビルド不要の静的Webアプリで、どなたもすぐに利用できます。</p>
             <p class="work-tags">HTML / JavaScript / SVG</p>
             <div class="work-links">
               <a href="https://okawahiroto.github.io/bassoon-fingering-app/" target="_blank" rel="noopener">Webで開く</a>
@@ -76,35 +60,42 @@
             </div>
           </article>
           <article class="work-card">
+            <p class="work-meta">Web アプリ</p>
+            <h3>Step Metronome</h3>
+            <p>シンプルなメトロノーム。増減幅を指定して、ワンタップでテンポを変更できます。</p>
+            <p class="work-tags">HTML / JavaScript / Vercel</p>
+            <div class="work-links"><a href="https://step-metronome.vercel.app" target="_blank" rel="noopener">Webで開く</a></div>
+          </article>
+          <article class="work-card">
             <p class="work-meta">開発プラットフォーム</p>
             <h3>個人アプリ開発プラットフォーム</h3>
-            <p>アイデアを話すだけで、要件整理・技術選定・デザイン・実装・動作確認まで Claude Code が一気通貫で進めるテンプレート。判断基準をリポジトリに同梱しています。</p>
+            <p>アイデアを話すだけで、要件整理・技術選定・デザイン・実装・動作確認まで Claude Code が一気通貫で進めるテンプレート</p>
             <p class="work-tags">Claude Code</p>
           </article>
           <article class="work-card">
             <p class="work-meta">開発支援ツール</p>
             <h3>Cross-model Code Review</h3>
-            <p>書いたコードを、会話履歴を持たない別プロセスのAIにレビューさせ、別のAIが修正する仕組み。AIに自分の答案を採点させない工夫です。</p>
+            <p>書いたコードを、会話履歴を持たない別プロセスのAIにレビューさせ、別のAIが修正する仕組み</p>
             <p class="work-tags">Claude Code / Codex</p>
           </article>
           <article class="work-card">
             <p class="work-meta">ローカル Web アプリ</p>
             <h3>AI Multi Chat</h3>
-            <p>1つの質問を ChatGPT・Claude・Gemini・Grok に同時に送り、回答とコストを並べて比較。AIを使い分ける判断材料をつくる道具です。</p>
+            <p>1つの質問を ChatGPT・Claude・Gemini・Grok に同時に送り、回答とコストを並べて比較</p>
             <p class="work-tags">OpenAI / Anthropic / Google / xAI API</p>
           </article>
           <article class="work-card">
             <p class="work-meta">ローカル Web アプリ</p>
             <h3>楽譜 → MusicXML</h3>
-            <p>紙の楽譜のPDFや写真を MusicXML に変換。処理はすべて手元のMacで完結し、外部にファイルを送りません。</p>
+            <p>紙の楽譜のPDFや写真を MusicXML に変換</p>
             <p class="work-tags">Python / OMR</p>
-            <div class="work-links"><a href="https://github.com/okawahiroto/score-to-musicxml-Audiveris" target="_blank" rel="noopener">GitHub</a></div>
+            <div class="work-links"><a href="https://github.com/okawahiroto/score-to-musicxml-homr" target="_blank" rel="noopener">GitHub</a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="how" class="section section-alt">
+    <!-- <section id="how" class="section section-alt">
       <div class="container">
         <h2 class="section-title">How I build</h2>
         <p class="section-lead">コードを書くのはAI。決めるのは自分。</p>
@@ -162,15 +153,16 @@
           </dl>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="contact" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <p class="section-lead">発信へのご感想や、ご相談は以下からどうぞ。</p>
         <div class="contact-links">
+          <a href="https://x.com/okawahiroto" target="_blank" rel="noopener">X</a>
+          <a href="https://note.com/okawahiroto" target="_blank" rel="noopener">note</a>
           <a href="https://github.com/okawahiroto" target="_blank" rel="noopener">GitHub</a>
-          <!-- TODO: X / note / LinkedIn のURLが決まったら追加 -->
         </div>
       </div>
     </section>
